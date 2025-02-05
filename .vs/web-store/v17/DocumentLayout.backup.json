@@ -1,0 +1,84 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisonkemsezane\\hobbyprojects\\web-store\\shopcartapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisonkemsezane\\hobbyprojects\\web-store\\shopcartapi\\shopcartapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\shopcartapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisonkemsezane\\hobbyprojects\\web-store\\shopcartapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisonkemsezane\\hobbyprojects\\web-store\\shopcartapi\\shopcartapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\shopcartapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ShopCartApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\appsettings.json",
+              "RelativeToolTip": "ShopCartApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-30T18:18:30.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ShopCartApi.http",
+              "DocumentMoniker": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\ShopCartApi.http",
+              "RelativeDocumentMoniker": "ShopCartApi\\ShopCartApi.http",
+              "ToolTip": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\ShopCartApi.http",
+              "RelativeToolTip": "ShopCartApi\\ShopCartApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-01-30T18:17:35.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShopCartApi",
+              "DocumentMoniker": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\ShopCartApi.csproj",
+              "RelativeDocumentMoniker": "ShopCartApi\\ShopCartApi.csproj",
+              "ToolTip": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\ShopCartApi.csproj",
+              "RelativeToolTip": "ShopCartApi\\ShopCartApi.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-29T19:30:07.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\Program.cs",
+              "RelativeDocumentMoniker": "ShopCartApi\\Program.cs",
+              "ToolTip": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\Program.cs",
+              "RelativeToolTip": "ShopCartApi\\Program.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-29T19:26:21.412Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
