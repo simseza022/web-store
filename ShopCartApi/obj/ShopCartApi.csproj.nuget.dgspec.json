@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\ShopCartApi.csproj": {}
+    "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\ShopCartApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\ShopCartApi.csproj": {
+    "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\ShopCartApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\ShopCartApi.csproj",
+        "projectUniqueName": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\ShopCartApi.csproj",
         "projectName": "ShopCartApi",
-        "projectPath": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\ShopCartApi.csproj",
-        "packagesPath": "C:\\Users\\SisonkeMsezane\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SisonkeMsezane\\HobbyProjects\\web-store\\ShopCartApi\\obj\\",
+        "projectPath": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\ShopCartApi.csproj",
+        "packagesPath": "C:\\Users\\sisko\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SisonkeMsezane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sisko\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
