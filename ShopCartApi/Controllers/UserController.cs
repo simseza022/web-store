@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using ShopCartApi.DataAccessLayer.Repositories;
 using ShopCartApi.DataContext;
 using ShopCartApi.Dtos;
 using ShopCartApi.Models;
@@ -13,11 +14,13 @@ namespace ShopCartApi.Controllers
     public class UserController : ControllerBase
     {
 
-        DataContextEF _dataContextEF;
+    
+        IUserRepository _userRepository;
         IMapper _mapper;
         public UserController(IConfiguration config) 
         {
-            _dataContextEF = new DataContextEF(config);
+            _userRepository = new UserRepository(config);
+         
             _mapper = new Mapper(
                 new MapperConfiguration( cfg => {
                     cfg.CreateMap<UserToAddDto, User>();
@@ -31,14 +34,14 @@ namespace ShopCartApi.Controllers
         public IEnumerable<User> Get()
         {
 
-            return _dataContextEF.Users == null?[]: _dataContextEF.Users.ToList();
+            return _userRepository.getUsers();
         }
 
         // GET api/Users/5
         [HttpGet("{id}")]
         public User Get(int id)
         {
-            User? user = _dataContextEF.Users?.Where(user => user.UserId == id).FirstOrDefault();
+            User? user = _userRepository.getSingleUser(id);
             if (user == null) {
                 throw new Exception("User not found");
             }
@@ -50,10 +53,11 @@ namespace ShopCartApi.Controllers
         public IActionResult Post(UserToAddDto value)
         {
             User user = _mapper.Map<User>(value);
+            _userRepository.Add(user);
 
-            _dataContextEF.Users?.Add(user);
+      
 
-            if(_dataContextEF.SaveChanges() > 0)
+            if(_userRepository.saveChanges())
             {
                 return Ok();  
             }
@@ -67,11 +71,9 @@ namespace ShopCartApi.Controllers
         [HttpPost("EditUser")]
         public IActionResult Put(User value)
         {
-            User? userDb = _dataContextEF.Users?
-                .Where(user => user.UserId == value.UserId)
-                .FirstOrDefault();
+            User? userDb = _userRepository.getSingleUser(value.UserId);
 
-            if(userDb != null)
+            if (userDb != null)
             {
                 userDb.FirstName = value.FirstName;
                 userDb.LastName = value.LastName;
@@ -82,7 +84,7 @@ namespace ShopCartApi.Controllers
 
             }
 
-            if (_dataContextEF.SaveChanges() > 0)
+            if (_userRepository.saveChanges())
             {
                 return Ok();
             }
@@ -91,13 +93,25 @@ namespace ShopCartApi.Controllers
 
         }
 
+            
 
 
+        // DELETE api/users/5
+        [HttpDelete("delete/{id}")]
+        public IActionResult Delete(int id)
+        {
+            User? userDb = _userRepository.getSingleUser(id);
 
-        //// DELETE api/<UserController>/5
-        //[HttpDelete("{id}")]
-        //public void Delete(int id)
-        //{
-        //}
+            if (userDb != null) {
+                _userRepository.Remove(userDb);
+                if (_userRepository.saveChanges())
+                {
+                    return Ok();
+                }
+            }
+
+            throw new Exception("User not found");
+
+        }
     }
 }

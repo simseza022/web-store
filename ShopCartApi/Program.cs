@@ -1,5 +1,7 @@
 
 
+using ShopCartApi.DataAccessLayer.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -29,7 +31,7 @@ builder.Services.AddCors((options) =>
 
 
 // Scoped Connection
-// builder.Services.AddScoped<IUserRepository, UserRepository>();
+ builder.Services.AddScoped<IUserRepository, UserRepository>();
 
 var app = builder.Build();
 
