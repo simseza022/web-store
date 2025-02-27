@@ -1,11 +1,14 @@
-﻿namespace ShopCartApi.Dtos
-{
-    public  partial class UserForLoginConfirmationDto
-    {
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; } 
+﻿using Microsoft.AspNetCore.Identity;
 
-        public UserForLoginConfirmationDto()
+namespace ShopCartApi.Models
+{
+
+    public class Auth
+    {
+        public string Email { get; set; } = "";
+        public byte[] PasswordHash { get; set; }
+        public byte[] PasswordSalt { get; set; }
+        public Auth() 
         {
             if(PasswordHash == null)
             {
