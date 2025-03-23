@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f60781f-a7b4-4de9-baec-5d39afa51481" name="Changes" comment="" />
+    <list default="true" id="5f60781f-a7b4-4de9-baec-5d39afa51481" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/FileContentIndex/463c6fc2-5b2d-4488-95ec-4e68a3915057.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/FileContentIndex/5fe4495d-2f11-42e2-aa74-c994c9255db7.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/FileContentIndex/86043c8e-d9f9-4473-a57d-e23f6c9d022f.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/FileContentIndex/a1c08b9b-6719-483c-99cb-97b4ae4e811d.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/Controllers/AuthController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/Controllers/AuthController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/Dtos/UserForLoginDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/Dtos/UserForLoginDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/Dtos/UserForRegistrationDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/Dtos/UserForRegistrationDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/Models/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/Models/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/ShopCartApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/ShopCartApi.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/ShopCartApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/ShopCartApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/ShopCartApi.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/ShopCartApi.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/ShopCartApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/ShopCartApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/bin/Debug/net9.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ApiEndpoints.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ApiEndpoints.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/EndpointInfo/ShopCartApi.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/EndpointInfo/ShopCartApi.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ref/ShopCartApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ref/ShopCartApi.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/refint/ShopCartApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/refint/ShopCartApi.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,24 +55,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/SisonkeMsezane/HobbyProjects/web-store&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/sisko/Side projects/web-store",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\sisko\\Side projects\\web-store\\web-store-angular\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-WS-243.22562.222" />
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
       </set>
     </attachedChunks>
   </component>
@@ -51,6 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737054299092</updated>
       <workItem from="1737054300293" duration="2499000" />
+      <workItem from="1742685521975" duration="3604000" />
     </task>
     <servers />
   </component>

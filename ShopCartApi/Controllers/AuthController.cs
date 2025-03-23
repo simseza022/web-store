@@ -1,11 +1,14 @@
 ﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Microsoft.IdentityModel.Tokens;
 using ShopCartApi.DataAccessLayer;
 using ShopCartApi.DataAccessLayer.Repositories;
 using ShopCartApi.Dtos;
 using ShopCartApi.Models;
 using System.Data;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 
@@ -45,17 +48,9 @@ namespace ShopCartApi.Controllers
                     }
 
                     //2. get the password key from the apppSettings.json file
-                    string passwordSaltPlusString = _configuration.GetSection("AppSettings:PasswordKey").Value + Convert.ToBase64String(PasswordSalt);
-
                     //3. Create passworrdHash
                     // prf => Pseudo Random Functionalityy
-                    byte[] PasswordHash = KeyDerivation.Pbkdf2(
-                        password: userForRegistration.Password,
-                        salt: Encoding.ASCII.GetBytes(passwordSaltPlusString),
-                        prf: KeyDerivationPrf.HMACSHA256,
-                        iterationCount: 100000,
-                        numBytesRequested: 256/8
-                       );
+                    byte[] PasswordHash = GetPasswordHash(userForRegistration.Password, PasswordSalt);
 
                     string sqlAddAuth = "INSERT INTO ShopCartAppSchema.Auth "
                         + "([Email], [PasswordHash], [PasswordSalt]) VALUES "
@@ -67,7 +62,7 @@ namespace ShopCartApi.Controllers
                     SqlParameter passwordSaltParam = new SqlParameter("@PasswordSalt", SqlDbType.VarBinary);
                     passwordSaltParam.Value = PasswordSalt;
                     SqlParameter passwordHashParam = new SqlParameter("@PasswordHash", SqlDbType.VarBinary);
-                    passwordSaltParam.Value = PasswordHash;
+                    passwordHashParam.Value = PasswordHash;
 
                     //add them to a list of parameters
                     sqlParameters.Add(passwordSaltParam);
@@ -75,6 +70,24 @@ namespace ShopCartApi.Controllers
 
                     if(_dataContextDapper.ExecuteSqlWitParameters(sqlAddAuth, sqlParameters))
                     {
+                        //add the user to the users table
+                        User userToAdd = new User(userForRegistration);
+                        string sqlAddUser = @"INSERT INTO ShopCartAppSchema.Users(
+                        [FirstName],
+                        [LastName],
+                        [Email],
+                        [Gender],
+                        [Active]) VALUES (" +
+                        "'"+userForRegistration.FirstName+"', '"+
+                            userForRegistration.LastName+ "', '"+ 
+                            userForRegistration.Email+ "', '"+
+                            userForRegistration.Gender+"', 1)";
+
+                        Console.WriteLine(userToAdd);
+                        if(!_dataContextDapper.ExecuteSql(sqlAddUser))
+                        {
+                            return StatusCode(400, "Error adding user");
+                        }
                         return Ok();
 
                     }
@@ -92,10 +105,98 @@ namespace ShopCartApi.Controllers
         }
 
         [HttpPost("Login")]
-        public IActionResult Login(UserForLoginConfirmationDto userForLogin)
+        public IActionResult Login(UserForLoginDto userForLogin)
         {
-            return Ok();
+            string sqlForHashAndSalt = @"SELECT 
+                [PasswordHash],
+                [PasswordSalt]
+                FROM ShopCartAppSchema.Auth WHERE Auth.Email = '" + userForLogin.Email + "'";
+            UserForLoginConfirmationDto userForConfimation  = _dataContextDapper.LoadDataSingle<UserForLoginConfirmationDto>(sqlForHashAndSalt);
+
+            byte[] PasswordHash = GetPasswordHash(userForLogin.Password, userForConfimation.PasswordSalt);
+
+            //if(PasswordHash == userForConfimation.PasswordHash) // won't work!
+
+            for (int i = 0; i < PasswordHash.Length; i++)
+            {
+                if (PasswordHash[i] != userForConfimation.PasswordHash[i])
+                {
+                    return StatusCode(401, "Incorrect password");
+                }
+                
+            }
+            string getUserIdSql = @"SELECT UserId FROM ShopCartAppSchema.Auth Where Email = '" + userForLogin.Email + "'";
+            int userId = _dataContextDapper.LoadDataSingle<int>(getUserIdSql);
+            return Ok(new Dictionary<string, string>
+            {
+                { 
+                    "token", CreateJWToken(userId) 
+                }
+            });
         }
 
+
+        private byte[] GetPasswordHash(string Password, byte[] PasswordSalt)
+        {
+
+            //2. get the password key from the apppSettings.json file
+            string passwordSaltPlusString = _configuration.GetSection("AppSettings:PasswordKey").Value + Convert.ToBase64String(PasswordSalt);
+
+            //3. Create passworrdHash
+            // prf => Pseudo Random Functionalityy
+            byte[] PasswordHash = KeyDerivation.Pbkdf2(
+                password: Password,
+                salt: Encoding.ASCII.GetBytes(passwordSaltPlusString),
+                prf: KeyDerivationPrf.HMACSHA256,
+                iterationCount: 100000,
+                numBytesRequested: 256 / 8
+               );
+
+            return PasswordHash;
+        }
+        private string CreateJWToken(int userId)
+        {
+            //1.Create Claimes
+            Claim[] claims = new Claim[]
+            {
+                new Claim("UserId", userId.ToString())
+            };
+            // Setting up the signature made up a few distinct parts
+
+            //3. get the password key from the apppSettings.json file
+            string? appSettingsTokenKey = _configuration.GetSection("AppSettings:TokenKey")?.Value;
+            if (appSettingsTokenKey != null)
+            {
+                SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(
+                    Encoding.UTF8.GetBytes(appSettingsTokenKey)
+                 );
+
+                SigningCredentials credentials = new SigningCredentials(
+                    symmetricSecurityKey, 
+                    SecurityAlgorithms.HmacSha256Signature
+                    );
+
+                //NOTE: securityTokenDescriptor  =  credentials + claimss
+                SecurityTokenDescriptor securityTokenDescriptor = new SecurityTokenDescriptor()
+                {
+                    Subject = new ClaimsIdentity(claims),
+                    SigningCredentials = credentials,
+                    Expires = DateTime.Now.AddDays(1),
+                };
+
+                JwtSecurityTokenHandler jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
+
+                //Create token then store it
+                SecurityToken token = jwtSecurityTokenHandler.CreateToken(securityTokenDescriptor);
+
+                return jwtSecurityTokenHandler.WriteToken(token);
+
+            }
+
+
+            // put the claim array inside our token
+
+            return "";
+        }
     }
 }
