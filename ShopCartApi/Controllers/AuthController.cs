@@ -125,7 +125,7 @@ namespace ShopCartApi.Controllers
                 }
                 
             }
-            string getUserIdSql = @"SELECT UserId FROM ShopCartAppSchema.Auth Where Email = '" + userForLogin.Email + "'";
+            string getUserIdSql = @"SELECT UserId FROM ShopCartAppSchema.Users Where Email = '" + userForLogin.Email + "'";
             int userId = _dataContextDapper.LoadDataSingle<int>(getUserIdSql);
             return Ok(new Dictionary<string, string>
             {

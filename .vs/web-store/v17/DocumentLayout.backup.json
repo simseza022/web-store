@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisko\\side projects\\web-store\\shopcartapi\\dtos\\userforloginconfirmationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\dtos\\userforloginconfirmationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisko\\side projects\\web-store\\shopcartapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisko\\side projects\\web-store\\shopcartapi\\dtos\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\dtos\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisko\\side projects\\web-store\\shopcartapi\\dataaccesslayer\\datacontextdapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\dataaccesslayer\\datacontextdapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisko\\side projects\\web-store\\shopcartapi\\dtos\\userforloginconfirmationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\dtos\\userforloginconfirmationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisko\\side projects\\web-store\\shopcartapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisko\\side projects\\web-store\\shopcartapi\\models\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\models\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisko\\side projects\\web-store\\shopcartapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|solutionrelative:shopcartapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AC5FC207-4A55-7788-2BF2-E9B36B29236E}|ShopCartApi\\ShopCartApi.csproj|c:\\users\\sisko\\side projects\\web-store\\shopcartapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -84,25 +84,37 @@
       "VerticalTabListWidth": 247,
       "DocumentGroups": [
         {
-          "DockedWidth": 203,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 38,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\DataAccessLayer\\Repositories\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "ShopCartApi\\DataAccessLayer\\Repositories\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\DataAccessLayer\\Repositories\\IUserRepository.cs",
-              "RelativeToolTip": "ShopCartApi\\DataAccessLayer\\Repositories\\IUserRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "ShopCartApi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Models\\User.cs",
+              "RelativeToolTip": "ShopCartApi\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T19:11:21.157Z",
+              "WhenOpened": "2025-02-16T17:27:42.38Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
+              "Title": "Auth.cs",
+              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Models\\Auth.cs",
+              "RelativeDocumentMoniker": "ShopCartApi\\Models\\Auth.cs",
+              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Models\\Auth.cs",
+              "RelativeToolTip": "ShopCartApi\\Models\\Auth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T15:08:56.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\DataAccessLayer\\Repositories\\UserRepository.cs",
               "RelativeDocumentMoniker": "ShopCartApi\\DataAccessLayer\\Repositories\\UserRepository.cs",
@@ -115,51 +127,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Auth.cs",
-              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Models\\Auth.cs",
-              "RelativeDocumentMoniker": "ShopCartApi\\Models\\Auth.cs",
-              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Models\\Auth.cs",
-              "RelativeToolTip": "ShopCartApi\\Models\\Auth.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAArAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\DataAccessLayer\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "ShopCartApi\\DataAccessLayer\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\DataAccessLayer\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "ShopCartApi\\DataAccessLayer\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T15:08:56.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Models\\User.cs",
-              "RelativeDocumentMoniker": "ShopCartApi\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Models\\User.cs",
-              "RelativeToolTip": "ShopCartApi\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T17:27:42.38Z",
+              "WhenOpened": "2025-02-20T19:11:21.157Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 197,
-          "SelectedChildIndex": 3,
+          "DockedWidth": 362,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "ShopCartApi\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Controllers\\UserController.cs",
-              "RelativeToolTip": "ShopCartApi\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAcwFUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-16T17:33:14.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DataContextDapper.cs",
               "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\DataAccessLayer\\DataContextDapper.cs",
               "RelativeDocumentMoniker": "ShopCartApi\\DataAccessLayer\\DataContextDapper.cs",
@@ -172,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "UserForRegistrationDto.cs",
               "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Dtos\\UserForRegistrationDto.cs",
               "RelativeDocumentMoniker": "ShopCartApi\\Dtos\\UserForRegistrationDto.cs",
@@ -191,27 +178,53 @@
               "RelativeDocumentMoniker": "ShopCartApi\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Controllers\\AuthController.cs*",
               "RelativeToolTip": "ShopCartApi\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAADkAAAAAAAAAAAArwFAAAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAiwIQAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T13:39:03.089Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ShopCartApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\appsettings.json",
+              "RelativeToolTip": "ShopCartApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-30T18:18:30.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "ShopCartApi\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Controllers\\UserController.cs",
+              "RelativeToolTip": "ShopCartApi\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAcwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-16T17:33:14.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "UserForLoginConfirmationDto.cs",
               "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Dtos\\UserForLoginConfirmationDto.cs",
               "RelativeDocumentMoniker": "ShopCartApi\\Dtos\\UserForLoginConfirmationDto.cs",
               "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Dtos\\UserForLoginConfirmationDto.cs",
               "RelativeToolTip": "ShopCartApi\\Dtos\\UserForLoginConfirmationDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T20:52:25.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "UserForLoginDto.cs",
               "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\Dtos\\UserForLoginDto.cs",
               "RelativeDocumentMoniker": "ShopCartApi\\Dtos\\UserForLoginDto.cs",
@@ -257,18 +270,6 @@
               "ViewState": "AgIAAAYAAAAAAAAAAAA1wA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-30T18:27:53.396Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\appsettings.json",
-              "RelativeDocumentMoniker": "ShopCartApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\sisko\\Side projects\\web-store\\ShopCartApi\\appsettings.json",
-              "RelativeToolTip": "ShopCartApi\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-30T18:18:30.229Z"
             },
             {
               "$type": "Document",
