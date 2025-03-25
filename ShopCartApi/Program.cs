@@ -1,6 +1,10 @@
 
 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
 using ShopCartApi.DataAccessLayer.Repositories;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +37,30 @@ builder.Services.AddCors((options) =>
 // Scoped Connection
  builder.Services.AddScoped<IUserRepository, UserRepository>();
 
+
+//JWT Auth setup
+string? appSettingsTokenKey = builder.Configuration.GetSection("AppSettings:TokenKey")?.Value;
+
+
+SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(
+    Encoding.UTF8.GetBytes(appSettingsTokenKey ?? "")
+    );
+
+TokenValidationParameters tokenValidationParameters = new TokenValidationParameters() 
+{
+    IssuerSigningKey = symmetricSecurityKey,
+    ValidateIssuer = false,
+    ValidateAudience = false,
+    ValidateIssuerSigningKey = false,
+};
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+            .AddJwtBearer(options => 
+            {
+                //Assign the token validation parameters
+                options.TokenValidationParameters = tokenValidationParameters;
+            });
+//End of JWT setup
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -47,6 +75,9 @@ else
     app.UseCors("ProdCors");
     app.UseHttpsRedirection();
 }
+
+//UseAuthentication() must always come before UseAuthorization()
+app.UseAuthentication();
 
 app.UseAuthorization();
 

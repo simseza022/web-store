@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.IdentityModel.Tokens;
 using ShopCartApi.DataAccessLayer;
 using ShopCartApi.DataAccessLayer.Repositories;
 using ShopCartApi.Dtos;
+using ShopCartApi.Helpers;
 using ShopCartApi.Models;
 using System.Data;
 using System.IdentityModel.Tokens.Jwt;
@@ -14,15 +16,23 @@ using System.Text;
 
 namespace ShopCartApi.Controllers
 {
+
+    [Authorize]
+    [ApiController]
+    [Route("api/[controller]")]
+   
     public class AuthController : Controller
     {
         private readonly DataContextDapper _dataContextDapper;
-        private readonly IConfiguration _configuration;
+        private readonly AuthHelper _authHelper;
         public AuthController(IConfiguration configuration)
         {
             _dataContextDapper = new DataContextDapper(configuration);
-            _configuration = configuration;
+            _authHelper = new AuthHelper(configuration);
         }
+
+
+        [AllowAnonymous]
         [HttpPost("Register")]
         public IActionResult Register(UserForRegistrationDto userForRegistration)
         {
@@ -50,7 +60,7 @@ namespace ShopCartApi.Controllers
                     //2. get the password key from the apppSettings.json file
                     //3. Create passworrdHash
                     // prf => Pseudo Random Functionalityy
-                    byte[] PasswordHash = GetPasswordHash(userForRegistration.Password, PasswordSalt);
+                    byte[] PasswordHash = _authHelper.GetPasswordHash(userForRegistration.Password, PasswordSalt);
 
                     string sqlAddAuth = "INSERT INTO ShopCartAppSchema.Auth "
                         + "([Email], [PasswordHash], [PasswordSalt]) VALUES "
@@ -103,7 +113,7 @@ namespace ShopCartApi.Controllers
             }
             throw new Exception("Passwords do not match");
         }
-
+        [AllowAnonymous]
         [HttpPost("Login")]
         public IActionResult Login(UserForLoginDto userForLogin)
         {
@@ -113,7 +123,7 @@ namespace ShopCartApi.Controllers
                 FROM ShopCartAppSchema.Auth WHERE Auth.Email = '" + userForLogin.Email + "'";
             UserForLoginConfirmationDto userForConfimation  = _dataContextDapper.LoadDataSingle<UserForLoginConfirmationDto>(sqlForHashAndSalt);
 
-            byte[] PasswordHash = GetPasswordHash(userForLogin.Password, userForConfimation.PasswordSalt);
+            byte[] PasswordHash = _authHelper.GetPasswordHash(userForLogin.Password, userForConfimation.PasswordSalt);
 
             //if(PasswordHash == userForConfimation.PasswordHash) // won't work!
 
@@ -130,73 +140,26 @@ namespace ShopCartApi.Controllers
             return Ok(new Dictionary<string, string>
             {
                 { 
-                    "token", CreateJWToken(userId) 
+                    "token", _authHelper.CreateJWToken(userId) 
                 }
             });
         }
 
-
-        private byte[] GetPasswordHash(string Password, byte[] PasswordSalt)
+        [HttpGet]
+        [Route("RefreshToken")]
+        public IActionResult RefreshToken()
         {
+            // We get the userId from the the ControllerBase from the Claims
+            string userID = User.FindFirst("UserId")?.Value + "";
+            // check if the user exists in the DB
+            string sqlGetUserId = "SELECT UserId from ShopCartAppSchema.Users Where UserId = " + userID;
 
-            //2. get the password key from the apppSettings.json file
-            string passwordSaltPlusString = _configuration.GetSection("AppSettings:PasswordKey").Value + Convert.ToBase64String(PasswordSalt);
+            int userIdDb = _dataContextDapper.LoadDataSingle<int>(sqlGetUserId);
 
-            //3. Create passworrdHash
-            // prf => Pseudo Random Functionalityy
-            byte[] PasswordHash = KeyDerivation.Pbkdf2(
-                password: Password,
-                salt: Encoding.ASCII.GetBytes(passwordSaltPlusString),
-                prf: KeyDerivationPrf.HMACSHA256,
-                iterationCount: 100000,
-                numBytesRequested: 256 / 8
-               );
-
-            return PasswordHash;
+            return Ok(new Dictionary<string, string> { { "token", _authHelper.CreateJWToken(userIdDb) } });
         }
-        private string CreateJWToken(int userId)
-        {
-            //1.Create Claimes
-            Claim[] claims = new Claim[]
-            {
-                new Claim("UserId", userId.ToString())
-            };
-            // Setting up the signature made up a few distinct parts
-
-            //3. get the password key from the apppSettings.json file
-            string? appSettingsTokenKey = _configuration.GetSection("AppSettings:TokenKey")?.Value;
-            if (appSettingsTokenKey != null)
-            {
-                SymmetricSecurityKey symmetricSecurityKey = new SymmetricSecurityKey(
-                    Encoding.UTF8.GetBytes(appSettingsTokenKey)
-                 );
-
-                SigningCredentials credentials = new SigningCredentials(
-                    symmetricSecurityKey, 
-                    SecurityAlgorithms.HmacSha256Signature
-                    );
-
-                //NOTE: securityTokenDescriptor  =  credentials + claimss
-                SecurityTokenDescriptor securityTokenDescriptor = new SecurityTokenDescriptor()
-                {
-                    Subject = new ClaimsIdentity(claims),
-                    SigningCredentials = credentials,
-                    Expires = DateTime.Now.AddDays(1),
-                };
-
-                JwtSecurityTokenHandler jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
-
-                //Create token then store it
-                SecurityToken token = jwtSecurityTokenHandler.CreateToken(securityTokenDescriptor);
-
-                return jwtSecurityTokenHandler.WriteToken(token);
-
-            }
 
 
-            // put the claim array inside our token
 
-            return "";
-        }
     }
 }

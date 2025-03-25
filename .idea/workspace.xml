@@ -4,13 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f60781f-a7b4-4de9-baec-5d39afa51481" name="Changes" comment="Angular web setup" />
+    <list default="true" id="5f60781f-a7b4-4de9-baec-5d39afa51481" name="Changes" comment="Angular web setup">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.metadata.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.projects.v9.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/FileContentIndex/2787671f-d072-4047-8b97-a9c96fb6ea01.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/FileContentIndex/95286b92-41e0-4944-860e-3fb213a80db6.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/v17/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.backup.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfoInputs.cache" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -21,22 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/sisko/Side projects/web-store",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\sisko\\Side projects\\web-store\\web-store-angular\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sisko/Side projects/web-store&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\sisko\\Side projects\\web-store\\web-store-angular\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -54,6 +71,7 @@
       <updated>1737054299092</updated>
       <workItem from="1737054300293" duration="2499000" />
       <workItem from="1742685521975" duration="3672000" />
+      <workItem from="1742748587578" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Angular web setup">
       <option name="closed" value="true" />
