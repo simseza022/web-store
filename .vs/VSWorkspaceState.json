@@ -1,9 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\ShopCartApi",
-    "\\ShopCartApi\\Controllers"
+    ""
   ],
-  "SelectedNode": "\\ShopCartApi\\Controllers\\DummyController.cs",
+  "SelectedNode": "\\web-store.sln",
   "PreviewInSolutionExplorer": false
 }

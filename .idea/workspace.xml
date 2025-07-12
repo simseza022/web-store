@@ -9,13 +9,10 @@
       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.metadata.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.metadata.v9.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.projects.v9.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/ProjectEvaluation/web-store.projects.v9.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/web-store/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/web-store/FileContentIndex/2787671f-d072-4047-8b97-a9c96fb6ea01.vsidx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/web-store/FileContentIndex/95286b92-41e0-4944-860e-3fb213a80db6.vsidx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/web-store/FileContentIndex/4da666b3-a000-4830-8035-40d0e3c935c0.vsidx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/web-store/v17/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/v17/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.backup.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.backup.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/web-store/v17/DocumentLayout.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ShopCartApi/obj/Debug/net9.0/ShopCartApi.AssemblyInfoInputs.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +47,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\sisko\\Side projects\\web-store\\web-store-angular\\node_modules\\typescript\\lib&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\sisko\\Side projects\\web-store\\shop-cart-angular\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -72,6 +69,8 @@
       <workItem from="1737054300293" duration="2499000" />
       <workItem from="1742685521975" duration="3672000" />
       <workItem from="1742748587578" duration="22000" />
+      <workItem from="1742926100192" duration="3917000" />
+      <workItem from="1743447223609" duration="8000" />
     </task>
     <task id="LOCAL-00001" summary="Angular web setup">
       <option name="closed" value="true" />

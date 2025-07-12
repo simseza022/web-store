@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "primeicons/primeicons.css";
+@import 'primeflex/primeflex.css';
+body{
+  margin:0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.input-text{
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  border-radius: .4rem;
+  padding: .5rem 1rem ;
+  border: 1px solid #d3d3d3;
+}
+
+input[type=text]:active{
+  border: 1px solid Orange !important;
+}

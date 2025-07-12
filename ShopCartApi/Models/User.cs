@@ -11,6 +11,8 @@ namespace ShopCartApi.Models
         public string Gender { get; set; } = "";
         public bool Active { get; set; }
 
+        public ICollection<Post>? Posts { get; set; }
+
         public User()
         {
 
@@ -22,6 +24,7 @@ namespace ShopCartApi.Models
             Email = userForReg.Email;
             Gender = userForReg.Gender;
             Active = userForReg.Active;
+           
         }
 
     }

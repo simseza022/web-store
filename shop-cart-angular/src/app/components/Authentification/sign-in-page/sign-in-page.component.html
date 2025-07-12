@@ -1,0 +1,40 @@
+<div class="w-full h-screen flex justify-content-center align-items-center" >
+  <div class="w-30rem bg-cyan-50 flex flex-column border-round-xl justify-content-start align-items-start p-4  ">
+    <img src="/images/Logo.png" alt="logo" class="w-full border-round-xl w-4rem h-4rem mb-4" />
+    <p class="w-0 m-0 mb-2 font-bold text-xl">
+      Get Started
+    </p>
+    <p class="w-0 m-0 mb-2 text-black-alpha-40">
+      Welcome to ShopCart - Let's create your account
+    </p>
+    <hr class="w-12 border-1 border-black-alpha-10 my-5">
+    <form class="flex flex-column w-12" [formGroup]="signInForm" (submit)="login()">
+      <div class="field w-12 flex flex-column justify-content-start align-items-start">
+        <label for="email" class="font-bold text-sm">Email</label>
+        <input formControlName="Email" autocomplete="email" type="text" name="email" id="email" class="input-text">
+        <p *ngIf="hasErrors('Email')" class="text-xs text-red-400 p-0 m-0">
+          required
+        </p>
+      </div>
+      <div class="field w-12 flex flex-column justify-content-start align-items-start mb-1">
+        <label for="password" class="font-bold text-sm">Password</label>
+        <input formControlName="Password" autocomplete="current-password" type="password" name="email" id="password" class="input-text ">
+        <p *ngIf="hasErrors('Password')" class="text-xs text-red-400 p-0 m-0">
+          required
+        </p>
+      </div>
+      <a href="https://google.com" class="text-sm my-0">Forgot password?</a>
+      <p-button
+        [disabled]="loadState==LOAD_STATE.LOADING"
+        [icon]="loadState == LOAD_STATE.LOADING ? 'pi pi-spin pi-spinner':''"
+        type="submit"
+        label="Sign up"
+        severity="warn" styleClass="w-12 border-round-xl" class="w-12 my-3" />
+    </form>
+    <div class="w-12 flex flex-row justify-content-center align-items-center gap-1">
+      <p-chip label="Google" icon="pi pi-google" class="cursor-pointer" />
+      <p-chip label="Facebook" icon="pi pi-facebook" class="cursor-pointer"/>
+    </div>
+  </div>
+
+</div>

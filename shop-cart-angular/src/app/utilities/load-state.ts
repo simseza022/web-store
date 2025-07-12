@@ -1,0 +1,6 @@
+export enum LOAD_STATE{
+  LOADING,
+  NOT_LOADING,
+  LOADED,
+  ERROR,
+}

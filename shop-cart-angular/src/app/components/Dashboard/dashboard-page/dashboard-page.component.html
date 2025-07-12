@@ -1,0 +1,38 @@
+<p-menubar [model]="items" >
+  <ng-template #start>
+    <img src="/images/Logo.png" style="width: 40px; height: 40px">
+  </ng-template>
+  <ng-template #end>
+    <div class="flex items-center gap-2">
+      <input type="text" pInputText placeholder="Search" class="w-36" />
+      <i class="pi pi-user" style="font-size: 1.5rem"></i>
+
+    </div>
+  </ng-template>
+</p-menubar>
+
+
+<div class="card flex justify-content-center">
+
+  <!--  <p-carousel [value]="products" [numVisible]="3" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">-->
+  <!--    <ng-template let-product #item>-->
+  <!--      <div class="border border-surface rounded-border m-2 p-4">-->
+  <!--        <div class="mb-4">-->
+  <!--          <div class="relative ">-->
+  <!--            <img src="/images/Logo.png"  class="w-full rounded-border" />-->
+  <!--&lt;!&ndash;            <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)" class="absolute" [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />&ndash;&gt;-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--        <div class="mb-4 font-medium">{{ "Name" }}</div>-->
+  <!--        <div class="flex justify-between items-center">-->
+  <!--          <div class="mt-0 font-semibold text-xl">{{ '$' + "Name" }}</div>-->
+  <!--          <span>-->
+  <!--                    <p-button icon="pi pi-heart" severity="secondary" [outlined]="true" />-->
+  <!--                    <p-button icon="pi pi-shopping-cart" styleClass="ml-2" />-->
+  <!--                </span>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </ng-template>-->
+  <!--  </p-carousel>-->
+
+</div>

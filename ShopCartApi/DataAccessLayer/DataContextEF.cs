@@ -11,6 +11,7 @@ namespace ShopCartApi.DataContext
         private readonly IConfiguration _config;
 
         public DbSet<User>? Users { get; set;  }
+        public DbSet<Post> Posts { get; set;  }
 
         public DataContextEF(IConfiguration config)
         {
@@ -42,9 +43,27 @@ namespace ShopCartApi.DataContext
             //.ToTable("TableName", "SchemaName");
             //.HasKey("Primary Key for the Users Table")
 
-            modelBuilder.Entity<User>()
-                .ToTable("Users")
-                .HasKey("UserId"); ;
+            var user = modelBuilder.Entity<User>()
+                .ToTable("Users");
+            user.HasKey(k => k.UserId);
+            user.HasMany(u => u.Posts)
+                .WithOne(p => p.User);
+
+
+
+
+
+            var post = modelBuilder.Entity<Post>()
+                 .ToTable("Posts");
+
+            post.HasKey(k => k.Id);
+
+            post.HasOne(u => u.User)
+                .WithMany(u => u.Posts)
+                .HasForeignKey(u => u.UserId)
+                .IsRequired();
+                
+                
 
         }
 
